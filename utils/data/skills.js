@@ -18,6 +18,7 @@ export const skillsData = [
   'Firebase',
   'MaterialUI',
   'Nginx',
+  'SEO',
   'Strapi'
 ]
 
