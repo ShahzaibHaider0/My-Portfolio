@@ -7,8 +7,7 @@ import Experience from "./components/homepage/experience";
 import HeroSection from "./components/homepage/hero-section";
 import Projects from "./components/homepage/projects";
 import Skills from "./components/homepage/skills";
-import { Helmet } from 'react-helmet';
-\\updated
+
 async function getData() {
   const res = await fetch(`https://dev.to/api/articles?username=${personalData.devUsername}`)
 
@@ -27,9 +26,7 @@ export default async function Home() {
   const blogs = await getData();
 
   return (
-    <Helmet>
-        <meta name="google-site-verification" content="jd7B7fs3Ps6YfbaZjmUTbLpDZQYjg05xjR-WD1pcQis" />
-      </Helmet>
+    
     <>
       <HeroSection />
       <AboutSection />
